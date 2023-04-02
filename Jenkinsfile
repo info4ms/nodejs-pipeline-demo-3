@@ -7,14 +7,14 @@ pipeline {
         
     stage('Git') {
       steps {
-        git 'https://github.com/****/****'
+        git 'https://github.com/info4ms/nodejs-pipeline-demo-3.git'
       }
     }
      
     stage('Build') {
       steps {
         sh 'npm install'
-         sh '<<Build Command>>'
+         echo '<<Build Command>>'
       }
     }  
     
